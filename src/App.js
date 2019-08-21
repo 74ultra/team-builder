@@ -12,12 +12,21 @@ function App() {
 
   return (
     <div className="App">
-      <Form />
+      <Form setPeople={setPeople}/>
       {people.map(person => <Card person={person} />)}
     </div>
   );
 }
 
 export default App;
+
+
+
+/*
+
+- The 'setPeople' function is passed to the <Form /> component as one of its props
+
+
+*/
 
 
